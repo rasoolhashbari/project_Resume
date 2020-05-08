@@ -11,11 +11,11 @@
 <body>
     <!------------ menu_bar ------------->
     <div class="container" id="MHome">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <nav id="my-navbar" class="navbar navbar-expand-md bg-dark navbar-dark ">
             <a class="navbar-brand" href="#">Rasool_Hashbari</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <span class="navbar-toggler-icon"></span>
+                 </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -33,6 +33,7 @@
                 </ul>
             </div>
         </nav>
+
         <!--------------- slider --------------->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -188,7 +189,23 @@
     <script>
         new WOW().init();
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+        var position = $(document).scrollTop();
+        $(document).ready(function() {
+            $(document).scroll(function() {
+                var x = $(document).scrollTop();
+                if (x < position && x > 200) {
+                    $("#my-navbar").addClass("nav-fix");
+                } else {
+                    $("#my-navbar").removeClass("nav-fix");
+                }
+                position = $(document).scrollTop();
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

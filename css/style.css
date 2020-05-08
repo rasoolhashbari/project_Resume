@@ -23,6 +23,15 @@ body {
 
 /* ----------------style navbar---------------------- */
 
+.nav-fix {
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    width: 82.2%;
+    animation: 2s ease-in 0s 1 slideInFromDown;
+    left: 120px;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1);
     background-color: #131415;
@@ -88,6 +97,15 @@ body {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(-100);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
 
