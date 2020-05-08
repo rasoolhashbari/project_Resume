@@ -194,10 +194,12 @@
         $(document).ready(function() {
             $(document).scroll(function() {
                 var x = $(document).scrollTop();
-                if (x < position && x > 200) {
+                if (x < position) {
                     $("#my-navbar").addClass("nav-fix");
+                    $("body").addClass("padding");
                 } else {
                     $("#my-navbar").removeClass("nav-fix");
+                    $("body").removeClass("padding");
                 }
                 position = $(document).scrollTop();
             });

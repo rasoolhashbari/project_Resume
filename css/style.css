@@ -23,12 +23,15 @@ body {
 
 /* ----------------style navbar---------------------- */
 
+.padding {
+    padding-top: 60px;
+}
+
 .nav-fix {
     position: fixed;
     top: 0px;
     z-index: 1000;
     width: 82.2%;
-    animation: 2s ease-in 0s 1 slideInFromDown;
     left: 120px;
 }
 
@@ -97,15 +100,6 @@ body {
     }
     100% {
         transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromDown {
-    0% {
-        transform: translateY(-100);
-    }
-    100% {
-        transform: translateY(0%);
     }
 }
 
