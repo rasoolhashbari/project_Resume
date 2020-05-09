@@ -31,8 +31,8 @@ body {
     position: fixed;
     top: -56px;
     z-index: 1000;
-    width: 82.2%;
-    left: 121px;
+    width: 97.8%;
+    left: 15px;
     transform: translatey(100%);
     transition: transform .5s ease-in;
 }
@@ -130,21 +130,30 @@ body {
 
 /* ------------parallax------------- */
 
-.parallax {
+.parallax p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.parallax-background-color {
+    background-color: rgb(3, 3, 32);
+}
+
+.parallax-background-color :nth-child(1) {
+    opacity: .6;
     /* The image used */
     background-image: url('../images/8.jpg');
     /* Full height */
-    height: 50%;
+    height: 60%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .parallax-footer {
     height: 300px;
-    background-color: darkblue;
+    background-color: rgb(8, 8, 39);
     font-size: 20px;
     color: white;
     text-align: right;
