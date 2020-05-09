@@ -130,8 +130,12 @@ body {
 
 /* ------------parallax------------- */
 
-.parallax p {
-    color: rgba(255, 255, 255, 1);
+.parallax-text p {
+    position: relative;
+    top: -200;
+    left: 70px;
+    color: white;
+    z-index: 9999;
 }
 
 .parallax-background-color {
