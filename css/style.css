@@ -175,21 +175,12 @@ body {
     margin-bottom: 50px;
 }
 
-.owl-item:hover {
+
+/* .owl-item:hover {
     box-shadow: 0 18px 18px -8px rgba(0, 0, 0, .1);
     transform: scale(1.05, 1.05);
     transition: all 1s cubic-bezier(.175, .885, 0, 1);
-}
-
-.owl-item {
-    margin-right: -6%;
-}
-
-.owl-stage {
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 0.25s ease 0s;
-    width: 2149px;
-}
+} */
 
 .card {
     margin-top: 50px;
@@ -201,4 +192,32 @@ body {
 
 .title-resome {
     margin: 20 auto -40px;
+}
+
+.owl-stage-outer {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+    font-size: 50px !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 50px !important;
 }

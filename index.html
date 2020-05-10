@@ -66,7 +66,7 @@
         <!------- نمونه کارها--------->
         <div class="col-md-12 card background-resome">
             <div class="title-resome">
-                <h4>نمونه کار های من</h4>
+                <h4>نمونه کارهای من</h4>
             </div>
             <div class="owl-carousel">
                 <div class="card" style="width: 18rem;">
@@ -205,10 +205,30 @@
 
         // --------owl js-------
 
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 0,
+            stagePadding: 45,
+            autoplayHoverPause: true,
+            lazyLoad: true,
+            responsive: {
+                0: {
+                    items: 1,
 
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-        });
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+
+                }
+            }
+        })
     </script>
 </body>
 
