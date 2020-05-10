@@ -3,8 +3,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="plugins/wow/animate.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl.theme.default.min.css">
 
 </head>
 
@@ -62,65 +64,15 @@
             </a>
         </div>
         <!------- نمونه کارها--------->
-        <div class="card mt-5 Resume-backgrund " id="MResume">
-            <button type="button" class="btn btn-primary btn-lg mb-3">Resume</button>
-            <div class="row mt-5 px-2">
-                <div class="col-md-4">
-                    <div class="card post">
-                        <img src="images/3.jpg" class="w-100" alt="">
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card post">
-                        <a href="#"><img class="w-100" src="images/1.jpg" alt=""></a>
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card post">
-                        <img class="w-100" src="images/2.jpg" alt="">
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 px-2">
-                <div class="col-md-4">
-                    <div class="card post">
-                        <img src="images/3.jpg" class="w-100" alt="">
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card post">
-                        <a href="#"><img class="w-100" src="images/1.jpg" alt=""></a>
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card post">
-                        <img class="w-100" src="images/2.jpg" alt="">
-                        <div class="card-body c1">نمونه کار تستی
-                            <a href="https://abasmanesh.com" target="black"><button type="button" class="btn btn-outline-primary">مشاهده سایت</button></a>
-                            <p>If you don’t design your own life plan, chances are you’ll fall into someone else’s plan. And guess what they have planned </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-12">
+            <div class="owl-carousel">
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
+                <div> <img src="images/1.jpg" alt=""> </div>
             </div>
         </div>
         <!------------------- About Me -------------------->
@@ -189,11 +141,16 @@
     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="js/js.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="plugins/wow/wow.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="plugins/owl/owl.carousel.min.js"></script>
+
     <script>
         new WOW().init();
-    </script>
-    <script>
+
+        // --------navbar js---------
+
+
         $("#my-navbar").addClass("nav-fix");
         var position = $(document).scrollTop();
         $(document).ready(function() {
@@ -208,6 +165,13 @@
                 }
                 position = $(document).scrollTop();
             });
+        });
+
+        // --------owl js-------
+
+
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
         });
     </script>
 </body>
