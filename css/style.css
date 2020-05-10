@@ -190,14 +190,15 @@ body {
 .owl-stage-outer {
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     padding-right: 10px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     width: 30px;
 }
 
@@ -208,8 +209,9 @@ body {
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 10;
     width: 30px;
+    bottom: 0;
 }
 
 .owl-carousel .owl-nav button.owl-prev span {
@@ -218,10 +220,19 @@ body {
 
 .owl-item:hover {
     transform: scale(1.05, 1.05) !important;
-    box-shadow: 2px 2px red;
+    width: 250px;
+}
+
+.owl-item .card:hover {
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .owl-item {
-    border-radius: 20px !important;
+    /* border-radius: 20px !important; */
     transition: all .8s cubic-bezier(.175, .885, 0, 1) !important;
+}
+
+.owl-prev:focus,
+.owl-next:focus {
+    outline: none;
 }
