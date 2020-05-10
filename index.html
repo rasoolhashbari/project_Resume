@@ -209,23 +209,21 @@
         owl.owlCarousel({
             items: 4,
             loop: true,
-            margin: 0,
-            stagePadding: 45,
+            stagePadding: 40,
             autoplayHoverPause: true,
             lazyLoad: true,
             responsive: {
                 0: {
                     items: 1,
-
+                    nav: true
                 },
                 600: {
                     items: 2,
-                    nav: true
+                    nav: true,
                 },
                 1000: {
                     items: 4,
                     nav: true,
-
                 }
             }
         })
