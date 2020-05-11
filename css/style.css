@@ -227,12 +227,33 @@ body {
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.owl-item .card {
+    border-radius: 15px;
+}
+
+.owl-item .card-img-top {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
 .owl-item {
-    /* border-radius: 20px !important; */
     transition: all .8s cubic-bezier(.175, .885, 0, 1) !important;
 }
 
 .owl-prev:focus,
 .owl-next:focus {
     outline: none;
+}
+
+.card-body span {
+    display: none;
+}
+
+.owl-item:hover span {
+    display: flex;
+}
+
+.card-body span img {
+    padding-left: 10px;
+    margin-top: -5px;
 }
