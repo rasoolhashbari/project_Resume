@@ -254,7 +254,7 @@ body {
 }
 
 
-/* footer */
+/*------------- footer --------------*/
 
 .footer {
     padding: 60px 0;
@@ -293,7 +293,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #ff304d;
+    color: #f1ab13;
 }
 
 .footer-social-links li {
