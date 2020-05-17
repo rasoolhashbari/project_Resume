@@ -24,7 +24,7 @@ body {
 /* ----------------style navbar---------------------- */
 
 .padding-nav {
-    padding-top: 125px;
+    padding-top: 70px;
 }
 
 .nav-fix {
@@ -301,7 +301,7 @@ body {
 
 /* -------------مهارت های من------------- */
 
-.bb {
+.My-skills {
     border: 15px solid rgba(176, 183, 224, 0.5);
     width: 350px;
     height: 350px;

@@ -5,7 +5,53 @@ $(function() {
     });
 });
 
-// -------------نمونه کار های من
+//---------------wow--------------
+
+new WOW().init();
+
+// --------navbar js---------
+
+var position = $(document).scrollTop();
+$(document).ready(function() {
+    $(document).scroll(function() {
+        var x = $(document).scrollTop();
+        if (x < position) {
+            console.log(x)
+            $("#my-navbar ").addClass("nav-fix");
+            $("body ").addClass("padding-nav ");
+        } else {
+            $("#my-navbar ").removeClass("nav-fix");
+            $("body ").removeClass("padding-nav ");
+        }
+        position = $(document).scrollTop();
+    });
+});
+
+// --------owl js-------
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+        items: 4,
+        loop: true,
+        stagePadding: 10,
+        autoplayHoverPause: true,
+        lazyLoad: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: true,
+            },
+            1000: {
+                items: 4,
+                nav: true,
+            }
+        }
+    })
+    // -------------نمونه کار های من
 
 var cards = $('.card1');
 
