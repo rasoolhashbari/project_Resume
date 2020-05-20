@@ -74,11 +74,13 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
-        items: 4,
-        loop: false,
+        items: 3,
+        // loop: true,
+        autoplay: true,
         stagePadding: 10,
         autoplayHoverPause: true,
         lazyLoad: true,
+
         responsive: {
             0: {
                 items: 1,
