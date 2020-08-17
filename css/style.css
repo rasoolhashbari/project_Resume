@@ -384,30 +384,6 @@ body {
     color: white;
 }
 
-
-/*------------ start footer--------- */
-
-.footer {
-    background-color: #191E22;
-    color: #6A6E71;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 10px 0 0;
-}
-
-.footer ul li {
-    display: inline-block;
-}
-
-
-/*---------------- end footer ------------*/
-
-
 /* -------------map--------------- */
 
 textarea.form-control {
@@ -450,3 +426,6 @@ textarea.form-control {
     background-position: left center;
     background-repeat: no-repeat;
 }
+/*------------ start footer--------- */
+
+/*---------------- end footer ------------*/
